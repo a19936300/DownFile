@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>Document</title>
+</head>
+<body>
+<div id="app">{{ message }}</div>
+<input type="text">
+<button @click="downFile()">提交</button>
+
+<script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+<script>
+    const { createApp } = Vue
+
+    createApp({
+        data() {
+            return {
+                message: 'Hello Vue!'
+            }
+        },
+        methods: {
+            downFile(){
+                console.log("sdfsdf")
+            }
+        }
+
+    }).mount('#app')
+</script>
+</body>
+</html>
